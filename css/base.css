@@ -14,21 +14,11 @@ input {
   padding: 5px 10px;
 }
 
-.estado_selecionado td,
-.letra_selecionada{
-	background: rgba(0,255,0,0.1);
+.linha_selecao td, .palavra_selecao{
+	background: #c5e1a5;
 }
-.estado_selecionado td.letra_selecionada{
+
+.linha_selecao td.palavra_selecao{
 	color: #fff;
 	background: green;
-}
-
-@media only screen and (min-width: 993px) {
-  .container {
-      width: 100%;
-  }
-}
-
-body {
-  background-color: 	#F8F8FF;
 }
