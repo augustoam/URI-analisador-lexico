@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/base.css">
-  </head>
-  <body>
-    <main>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <nav>
-        <div class="nav-wrapper grey darken-3">
-          <a class="brand-logo center">Analisador Léxico</a>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+  <main>
+
+    <nav>
+      <div class="nav-wrapper grey darken-3">
+        <a class="brand-logo center">Analisador Léxico</a>
+      </div>
+    </nav>
+
+    <div class="container" style="margin-top:20px;">
+      <div class="row">
+        <div class="col l5">
+          <input id="palavra" type="text" class="form-control input-palavra" placeholder="Tokens">
         </div>
-      </nav>
-
-      <div class="container" style="margin-top:20px;">
-        <div class="row">
-          <div class="col l5">
-            <input id="palavra" type="text" class="form-control input-palavra" placeholder="Tokens">
-          </div>
-          <div class="col l1">
-            <a class="btn-floating waves-effect waves-light green" onclick="adicionaColecaoPalavras()">
+        <div class="col l1">
+          <a class="btn-floating waves-effect waves-light green" onclick="adicionaColecaoPalavras()">
               <i class="material-icons">add</i>
             </a>
-          </div>
-          <div class="col l6">
-            <input type="text" class="form-control" placeholder="Validação" id="campo-validacao"></input>
-          </div>
         </div>
+        <div class="col l6">
+          <input type="text" class="form-control" placeholder="Validação" id="campo-validacao"></input>
+        </div>
+      </div>
 
-        <div class="row">
-          <div class="col l12">
-            <div id="lista-palavras" style="margin-top:10px"></div>
-          </div>
+      <div class="row">
+        <div class="col l12">
+          <div id="lista-palavras" style="margin-top:10px"></div>
         </div>
+      </div>
+      <div class="row">
+        <div class="col l12">
+          <table id="tabela" class="centered bordered tabela-automato"></table>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="page-footer grey darken-2">
+    <div class="footer-copyright">
+      <div class="container">
         <div class="row">
-          <div class="col l12">
-            <table id="tabela" class="centered bordered tabela-automato"></table>
+          <div class="col m6">
+            <h5 class="white-text">Augusto Pedrollo Albertoni</h5>
+          </div>
+
+          <div class="col m6 right-align">
+            <div href="https://github.com/augustoam/URI-analisador-lexico/archive/master.zip" class="waves-effect btn grey ">
+              <i class="material-icons left">cloud_download</i>Download
+            </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </footer>
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/tabela.js"></script>
-  </body>
+  <script type="text/javascript " src="js/jquery.min.js "></script>
+  <script type="text/javascript " src="js/materialize.min.js "></script>
+  <script type="text/javascript " src="js/index.js "></script>
+  <script type="text/javascript " src="js/tabela.js "></script>
+</body>
+
 </html>
